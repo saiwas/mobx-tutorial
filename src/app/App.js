@@ -10,7 +10,7 @@ import TodoList from '../components/TodoList';
 class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div>
         <TodoList stores={Stores} />
       </div>
     );
