@@ -16,3 +16,8 @@ create-react-app mobx-tutorial
 ```sh
   npm start
 ```
+
++ **Step 4** - Install `Babel plugins`
+```sh
+  npm install --save-dev babel-cli babel-core babel-plugin-transform-decorators-legacy
+```
