@@ -117,10 +117,5 @@
       "/Users/johnny/Workspace/TBL_Projects/mobx-tutorial/node_modules/jest-watch-typeahead/filename.js",
       "/Users/johnny/Workspace/TBL_Projects/mobx-tutorial/node_modules/jest-watch-typeahead/testname.js"
     ]
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
   }
 }
