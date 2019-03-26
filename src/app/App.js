@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import TodoList from '../components/TodoList';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <span class='Subject'>Hello Mobx!</span>
+      <div className='App'>
+        <TodoList />
       </div>
     );
   }
