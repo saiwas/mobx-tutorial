@@ -1,5 +1,5 @@
 import TodoStore from './TodoStore';
 
-export default {
+export {
   TodoStore
 };

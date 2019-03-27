@@ -6,12 +6,12 @@ import './style.css';
 class TodoList extends Component {
 
   filterChangeHandler = (e) => {
-    this.props.stores.TodoStore.filter = e.target.value;
+    this.props.stores.filter = e.target.value;
   }
 
   createTodo = (e) => {
     if (e.which === 13) {
-      this.props.stores.TodoStore.createTodo(e.target.value);
+      this.props.stores.createTodo(e.target.value);
       e.target.value = '';
     }
   }
@@ -21,7 +21,7 @@ class TodoList extends Component {
   }
 
   render() {
-    const { clearCompleted, filter, filtedTodos } = this.props.stores.TodoStore;
+    const { clearCompleted, filter, filtedTodos } = this.props.stores;
     const todoList = filtedTodos.map(todoItem => {
       return (
         <li key={todoItem.id}>
