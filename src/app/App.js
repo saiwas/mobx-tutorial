@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
 import './App.css';
 
-// Import the data layers
-import Stores from '../stores';
+// Import Router
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-// Import the components
-import TodoList from '../components/TodoList';
+// Import Pages
+import {
+  PageAbout,
+  PageTodo
+} from '../pages'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <TodoList stores={Stores} />
-      </div>
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Todo</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Route path="/" exact component={PageTodo} />
+          <Route path="/about" component={PageAbout} />
+        </div>
+      </Router>
     );
   }
 }
